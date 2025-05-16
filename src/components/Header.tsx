@@ -23,7 +23,7 @@ const Header = () => {
   const handleSignIn = () => {
     toast({
       title: "Authentication Coming Soon",
-      description: "Sign in functionality will be implemented with Supabase integration",
+      description: "Sign in functionality will be implemented soon",
       duration: 3000,
     });
   };
