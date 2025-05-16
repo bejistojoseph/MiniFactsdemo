@@ -22,7 +22,7 @@ const Header = () => {
 
   const handleSignIn = () => {
     toast({
-      title: "Authentication Coming Soon",
+      title: "🔒Authentication Coming Soon",
       description: "Sign in functionality will be implemented soon",
       duration: 3000,
     });
@@ -98,7 +98,7 @@ const Header = () => {
                   <ul className="grid gap-3 p-4 w-[400px] md:w-[500px] lg:w-[600px] grid-cols-2">
                     <li>
                       <Link 
-                        to="/lifehacks/home" 
+                        to="/lifehacks" 
                         className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-teal-50 focus:bg-teal-50"
                       >
                         <div className="text-sm font-medium leading-none text-teal-800">Home Hacks</div>
@@ -109,7 +109,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link 
-                        to="/lifehacks/kitchen" 
+                        to="/lifehacks" 
                         className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-teal-50 focus:bg-teal-50"
                       >
                         <div className="text-sm font-medium leading-none text-teal-800">Kitchen Tricks</div>
@@ -156,13 +156,14 @@ const Header = () => {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link 
+                {/* submit button */}
+                {/* <Link 
                   to="/submit" 
                   className="group flex items-center justify-between gap-1 px-4 py-2 text-sm font-medium transition-colors hover:text-teal-600"
                 >
                   Submit
                   <span className="text-xs text-gray-400 transition-colors group-hover:text-teal-500">→</span>
-                </Link>
+                </Link> */}
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
